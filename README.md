@@ -14,4 +14,6 @@ python3 -m http.server 8000
 
 ## Deploy
 
-Hosted with GitHub Pages from the `main` branch root.
+Every push to `main` deploys to GitHub Pages through the workflow in `.github/workflows/deploy.yml`. It can also be run by hand from the Actions tab.
+
+One-time setup: in **Settings › Pages**, set **Source** to **GitHub Actions**.
