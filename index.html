@@ -4,12 +4,24 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Jeremy Xu, Lead Data Engineer</title>
-<meta name="description" content="Jeremy Xu, Lead Data Engineer. Snowflake, dbt, Airflow, Python and LangChain.">
+<meta name="description" content="Jeremy Xu, Lead Data Engineer. Building the foundations companies make decisions on with Snowflake, dbt, Airflow, Python and LangChain.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://jeremyxu2-swe.github.io/resume/">
+<meta property="og:title" content="Jeremy Xu, Lead Data Engineer">
+<meta property="og:description" content="Building the foundations companies make decisions on. Snowflake, dbt, Airflow, Python and LangChain.">
+<meta property="og:image" content="https://jeremyxu2-swe.github.io/resume/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Jeremy Xu, Lead Data Engineer">
+<meta name="twitter:description" content="Building the foundations companies make decisions on.">
+<meta name="twitter:image" content="https://jeremyxu2-swe.github.io/resume/og-image.png">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230E1217'/%3E%3Cpath d='M16 7l8 4.5v9L16 25l-8-4.5v-9z' fill='none' stroke='%23C99A45' stroke-width='2'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&amp;family=Geist:wght@400;500;600&amp;family=Geist+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&amp;family=Geist:wght@400;500;600&amp;family=Geist+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
 <style>
 body{margin:0;background:#0E1217}
-a{color:#C99A45}a:hover{color:#FFFFFF}
+a{color:#E8ECF0}a:hover{color:#C99A45}
 button:focus-visible,a:focus-visible{outline:2px solid #C99A45;outline-offset:3px}
 .grid{stroke:#3A4652;stroke-width:.7;opacity:.28}
 .edge{stroke:rgba(255,255,255,.22);stroke-width:.8;stroke-linejoin:round}
@@ -28,16 +40,49 @@ button:focus-visible,a:focus-visible{outline:2px solid #C99A45;outline-offset:3p
 .st-vio{stop-color:#2E353C;stop-opacity:.4}
 .st-grn{stop-color:#2E353C;stop-opacity:.4}
 .st-0{stop-color:#0E1217;stop-opacity:0}
-.glass{background:rgba(17,22,28,.84);-webkit-backdrop-filter:blur(16px);backdrop-filter:blur(16px);border:1px solid rgba(255,255,255,.12)}
-@media (max-width: 600px){.mcontent{gap:8px !important}.mcontent [style*="padding: 64px 0 120px"]{padding:32px 0 0 !important}.mcontent [style*="font-size: 11px"]{font-size:11px !important}.mcontent [style*="font-size: 12px"]{font-size:11px !important}.mcontent [style*="font-size: 13px"]{font-size:11px !important}.mcontent [style*="font-size: 14px"]{font-size:11px !important}.mcontent [style*="font-size: 15px"]{font-size:11.6px !important}.mcontent [style*="font-size: 16px"]{font-size:12.3px !important}.mcontent [style*="font-size: 17px"]{font-size:13.2px !important}.mcontent [style*="font-size: 22px"]{font-size:16.9px !important}.mcontent [style*="font-size: 24px"]{font-size:18.7px !important}.mcontent [style*="font-size: 30px"]{font-size:23.1px !important}.mcontent [style*="font-size: 36px"]{font-size:27.5px !important}.mcontent [style*="font-size: 52px"]{font-size:39.6px !important}.mcontent [style*="font-size: clamp(44px"]{font-size:34.1px !important}}
-@media (prefers-reduced-motion: reduce){.tube-core{animation:none}}
+.label{font-family:'Geist Mono',ui-monospace,monospace;font-size:12px;letter-spacing:.12em;font-variant-numeric:tabular-nums}
+.hero{padding:120px 0 180px}
+.name{font-size:clamp(64px,10vw,132px)}
+.statement{font-size:clamp(26px,3.2vw,38px)}
+.sec{margin-top:120px}
+.about{font-size:19px}
+.h2{font-size:56px}
+.company{font-size:24px}
+.role{font-size:30px}
+.bullets{font-size:16px}
+.closing{font-size:clamp(44px,6vw,80px)}
+.timeline{position:relative;padding-left:44px;display:flex;flex-direction:column;gap:72px}
+.timeline::before{content:"";position:absolute;left:6px;top:10px;bottom:10px;width:1px;background:linear-gradient(180deg,#C99A45,rgba(201,154,69,.12))}
+.node{position:absolute;left:-44px;top:8px;width:11px;height:11px;background:#0E1217;border:1.5px solid #C99A45;transform:rotate(45deg)}
+.spine-dot{position:absolute;left:3px;top:10px;width:7px;height:7px;border-radius:50%;background:#C99A45;box-shadow:0 0 12px 3px rgba(201,154,69,.55);animation:spine 6s linear infinite}
+@keyframes spine{from{top:10px;opacity:0}8%{opacity:1}92%{opacity:1}to{top:calc(100% - 16px);opacity:0}}
+.pan{transform-origin:72% 55%;animation:pan linear both;animation-timeline:scroll(root)}
+@keyframes pan{from{transform:none}to{transform:translate(-5%,-9%) scale(1.2)}}
+.veil{opacity:0;animation:veil linear both;animation-timeline:scroll(root);animation-range:0px 700px}
+@keyframes veil{to{opacity:.84}}
+@supports not (animation-timeline: scroll()){.veil{animation:none;opacity:.6}}
+@media (max-width: 600px){
+.hero{padding:56px 0 340px}
+.sec{margin-top:72px}
+.about{font-size:16px}
+.h2{font-size:40px}
+.company{font-size:20px}
+.role{font-size:24px}
+.company{font-family:Geist,'Helvetica Neue',Arial,sans-serif !important;font-size:15px;font-weight:500 !important;color:#B8C1CB}
+.bullets{font-size:14px}
+.timeline{padding-left:28px;gap:56px}
+.node{left:-28px}
+.label{font-size:11px}
+}
+@media (prefers-reduced-motion: reduce){.pan,.spine-dot,.tube-core{animation:none}.veil{animation:none;opacity:.6}.spine-dot{display:none}}
 </style>
 </head>
 <body>
 <div style="position: relative; background: #0E1217; color: #E8ECF0; font-family: Geist, 'Helvetica Neue', Arial, sans-serif">
 
-<div aria-hidden="true" style="position: sticky; top: 0; height: min(100vh, 980px); margin-bottom: calc(-1 * min(100vh, 980px)); overflow: hidden; z-index: 0">
-<svg viewBox="-320 -260 1680 1060" preserveAspectRatio="xMaxYMid slice" style="display: block; width: 100%; height: 100%">
+<div aria-hidden="true" style="position: sticky; top: 0; height: min(100vh, 1000px); margin-bottom: calc(-1 * min(100vh, 1000px)); overflow: hidden; z-index: 0">
+<svg class="pan" viewBox="-320 -260 1680 1060" preserveAspectRatio="xMaxYMid slice" style="display: block; width: 100%; height: 100%">
+<g transform="translate(80,46)">
 <defs>
 <radialGradient id="gCyan"><stop offset="0" class="st-cyan"></stop><stop offset="1" class="st-0"></stop></radialGradient>
 <radialGradient id="gMag"><stop offset="0" class="st-mag"></stop><stop offset="1" class="st-0"></stop></radialGradient>
@@ -913,164 +958,140 @@ button:focus-visible,a:focus-visible{outline:2px solid #C99A45;outline-offset:3p
 
 </g>
 
+</g>
 </svg>
-<div style="position: absolute; inset: 0; background: linear-gradient(90deg, rgba(14,18,23,.94) 0%, rgba(14,18,23,.7) 34%, rgba(14,18,23,.1) 62%, rgba(14,18,23,0) 100%); pointer-events: none"></div>
-<div style="position: absolute; inset: 0; background: #0E1217; opacity: 0; pointer-events: none"></div>
+<div style="position: absolute; inset: 0; background: linear-gradient(90deg, rgba(14,18,23,.95) 0%, rgba(14,18,23,.82) 34%, rgba(14,18,23,.35) 50%, rgba(14,18,23,0) 64%, rgba(14,18,23,0) 100%); pointer-events: none"></div>
+<div class="veil" style="position: absolute; inset: 0; background: #0E1217; pointer-events: none"></div>
 <div style="position: absolute; left: 0; right: 0; bottom: 0; height: 180px; background: linear-gradient(180deg, rgba(14,18,23,0), #0E1217); pointer-events: none"></div>
 </div>
 
-<div class="mcontent" style="position: relative; z-index: 1; max-width: 1200px; margin: 0 auto; padding: 0 24px 80px; display: flex; flex-direction: column; gap: 56px">
+<div class="wrap" style="position: relative; z-index: 1; max-width: 1200px; margin: 0 auto; padding: 0 24px 64px; display: flex; flex-direction: column">
 
-<header style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 16px; padding: 28px 0 16px; border-bottom: 1px solid rgba(255,255,255,.18)">
-<div style="display: flex; align-items: baseline; gap: 14px; flex-wrap: wrap">
-<span style="font-family: Fraunces, Georgia, serif; font-weight: 500; font-size: 22px">Jeremy Xu</span>
-<span style="font-family: 'Geist Mono', ui-monospace, monospace; font-size: 12px; letter-spacing: .12em; color: #8F9AA6">LEAD DATA ENGINEER</span>
-</div>
-<nav style="display: flex; flex-wrap: wrap; gap: 24px; font-family: 'Geist Mono', ui-monospace, monospace; font-size: 13px; letter-spacing: .08em">
-<a href="#experience" style="text-decoration: none; color: #E8ECF0">EXPERIENCE</a>
-<a href="#skills" style="text-decoration: none; color: #E8ECF0">SKILLS</a>
+<header style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 12px 24px; padding: 28px 0 16px; border-bottom: 1px solid rgba(255,255,255,.14)">
+<span style="font-family: Fraunces, Georgia, serif; font-weight: 500; font-size: 20px">Jeremy Xu</span>
+<nav style="display: flex; flex-wrap: wrap; gap: 24px">
+<a class="label" href="#about" style="text-decoration: none; color: #D5DBE1">ABOUT</a>
+<a class="label" href="#experience" style="text-decoration: none; color: #D5DBE1">EXPERIENCE</a>
+<a class="label" href="#skills" style="text-decoration: none; color: #D5DBE1">SKILLS</a>
+<a class="label" href="#contact" style="text-decoration: none; color: #D5DBE1">CONTACT</a>
 </nav>
 </header>
 
-<section style="display: flex; flex-direction: column; gap: 28px; padding: 64px 0 120px; max-width: 620px">
-<span style="font-family: 'Geist Mono', ui-monospace, monospace; font-size: 12px; letter-spacing: .16em; color: #C99A45">ABOUT ME</span>
-<h1 style="margin: 0; font-family: Fraunces, Georgia, serif; font-weight: 500; font-size: clamp(44px, 6vw, 80px); line-height: 1; letter-spacing: -0.025em; text-wrap: balance">Hi, I'm Jeremy.</h1>
-<div class="glass" style="display: flex; flex-direction: column; gap: 16px; padding: 24px 28px; border-radius: 16px; font-size: 17px; line-height: 1.65; color: #D5DBE1">
-<p style="margin: 0">I'm a Lead Data Engineer who builds the pipelines and platforms that give companies clean, reliable data for every decision. I came to engineering by an unconventional route, from psychology and education through data analytics and web development, which gave me a strong sense of how people actually use data. I'm self-taught, I learn quickly, and I love building foundations with Snowflake, dbt and Airflow that teams can grow on.</p>
-</div>
-<div style="display: flex; flex-wrap: wrap; gap: 12px">
-<a href="#experience" style="display: inline-flex; align-items: center; min-height: 48px; padding: 0 22px; border-radius: 999px; background: #E8ECF0; color: #0E1217; text-decoration: none; font-family: 'Geist Mono', ui-monospace, monospace; font-size: 13px; letter-spacing: .08em; font-weight: 500">VIEW EXPERIENCE</a>
+<section class="hero" style="display: flex; flex-direction: column; gap: 24px; max-width: 640px">
+<span class="label" style="color: #B8C1CB">LEAD DATA ENGINEER</span>
+<h1 class="name" style="margin: 0; font-family: Fraunces, Georgia, serif; font-weight: 500; line-height: .92; letter-spacing: -0.03em">Jeremy Xu</h1>
+<p class="statement" style="margin: 0; font-family: Fraunces, Georgia, serif; font-weight: 400; line-height: 1.25; letter-spacing: -0.01em; color: #D5DBE1; max-width: 22ch; text-wrap: balance">Building the <em style="color: #C99A45; font-style: italic">foundations</em> companies make decisions on.</p>
+<div style="display: flex; flex-wrap: wrap; gap: 12px; padding-top: 8px">
+<a href="#experience" style="display: inline-flex; align-items: center; min-height: 48px; padding: 0 24px; border-radius: 999px; background: #E8ECF0; color: #0E1217; text-decoration: none; font-family: 'Geist Mono', ui-monospace, monospace; font-size: 13px; letter-spacing: .08em; font-weight: 500">VIEW EXPERIENCE</a>
+<a href="#contact" style="display: inline-flex; align-items: center; min-height: 48px; padding: 0 24px; border-radius: 999px; border: 1px solid rgba(255,255,255,.35); color: #E8ECF0; text-decoration: none; font-family: 'Geist Mono', ui-monospace, monospace; font-size: 13px; letter-spacing: .08em">GET IN TOUCH</a>
+<a href="https://jeremyxu2-swe.github.io/resume/Jeremy_Xu_Resume.pdf" download="Jeremy_Xu_Resume.pdf" style="display: inline-flex; align-items: center; gap: 10px; min-height: 48px; padding: 0 24px; border-radius: 999px; border: 1px solid rgba(255,255,255,.35); color: #E8ECF0; text-decoration: none; font-family: 'Geist Mono', ui-monospace, monospace; font-size: 13px; letter-spacing: .08em"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v12"></path><path d="M6 11l6 6 6-6"></path><path d="M5 20h14"></path></svg>RÉSUMÉ (PDF)</a>
 </div>
 </section>
 
-<section id="experience" style="display: flex; flex-direction: column; gap: 24px">
+<section id="about" class="sec" style="display: flex; flex-wrap: wrap; gap: 16px 56px; padding-top: 32px; border-top: 1px solid rgba(255,255,255,.14)">
+<h2 class="label" style="flex: 0 1 240px; margin: 0; font-weight: 400; color: #A3ADB8">ABOUT</h2>
+<p class="about" style="flex: 999 1 420px; min-width: 0; margin: 0; line-height: 1.6; color: #D5DBE1; max-width: 62ch">I'm a Lead Data Engineer who builds the pipelines and platforms that give companies clean, reliable data for every decision. I came to engineering by an unconventional route, from psychology and education through data analytics and web development, which gave me a strong sense of how people actually use data. I'm self-taught, I learn quickly, and I love building foundations with Snowflake, dbt and Airflow that teams can grow on.</p>
+</section>
+
+<section id="experience" class="sec" style="display: flex; flex-direction: column; gap: 48px">
 <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: 12px">
-<h2 style="margin: 0; font-family: Fraunces, Georgia, serif; font-weight: 500; font-size: 52px; letter-spacing: -0.02em">Experience</h2>
-<span style="font-family: 'Geist Mono', ui-monospace, monospace; font-size: 11px; letter-spacing: .14em; color: #8F9AA6">3 ORGANIZATIONS · 2020–PRESENT</span>
+<h2 class="h2" style="margin: 0; font-family: Fraunces, Georgia, serif; font-weight: 500; letter-spacing: -0.02em">Experience</h2>
+<span class="label" style="color: #A3ADB8">3 ORGANIZATIONS · 2020 — PRESENT</span>
 </div>
-
-<article class="glass" style="display: flex; flex-wrap: wrap; gap: 28px 48px; padding: 32px; border-radius: 16px">
-<div style="flex: 0 1 250px; display: flex; flex-direction: column; gap: 10px">
-<span style="align-self: flex-start; font-family: 'Geist Mono', ui-monospace, monospace; font-size: 11px; letter-spacing: .12em; padding: 6px 12px; border-radius: 999px; background: rgba(201,154,69,.16); color: #C99A45; border: 1px solid rgba(201,154,69,.5)">3 YEARS</span>
-<span style="font-family: 'Geist Mono', ui-monospace, monospace; font-size: 13px; letter-spacing: .06em; color: #B8C1CB; font-variant-numeric: tabular-nums">NOV 2023 — PRESENT</span>
-<span style="font-family: Fraunces, Georgia, serif; font-weight: 500; font-size: 24px">Americor</span>
+<div class="timeline">
+<span class="spine-dot" aria-hidden="true"></span>
+<article class="job" style="position: relative; display: flex; flex-wrap: wrap; gap: 16px 56px">
+<span class="node" aria-hidden="true"></span>
+<div style="flex: 0 1 240px; display: flex; flex-direction: column; gap: 10px">
+<span style="align-self: flex-start; font-family: 'Geist Mono', ui-monospace, monospace; font-size: 12px; letter-spacing: .12em; padding: 6px 12px; border-radius: 999px; background: rgba(201,154,69,.14); color: #C99A45; border: 1px solid rgba(201,154,69,.45)">3 YEARS</span>
+<span class="label" style="color: #B8C1CB">NOV 2023 — PRESENT</span>
+<span class="company" style="font-family: Fraunces, Georgia, serif; font-weight: 500">Americor</span>
 </div>
-<div style="flex: 999 1 420px; min-width: 0; display: flex; flex-direction: column; gap: 16px">
-<h3 style="margin: 0; font-family: Fraunces, Georgia, serif; font-weight: 500; font-size: 30px; letter-spacing: -0.01em; color: #E8ECF0">Lead Data Engineer</h3>
-<ul style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 12px; font-size: 16px; line-height: 1.55; color: #D5DBE1">
-<li style="display: flex; gap: 14px"><span style="flex: 0 0 8px; height: 8px; margin-top: 8px; background: #C99A45; transform: rotate(45deg)"></span><span>Led the modernization of the company's data platform, migrating from on-prem servers and legacy cron jobs to a cloud stack built on Snowflake, dbt and Airflow (MWAA), and own the upgrades of core tooling, including Airflow 3 and the dbt Fusion engine.</span></li>
-<li style="display: flex; gap: 14px"><span style="flex: 0 0 8px; height: 8px; margin-top: 8px; background: #C99A45; transform: rotate(45deg)"></span><span>Designed and enforced a medallion architecture, naming standards and semantic views, and lead ongoing database maintenance and governance, including role-based access, cost monitoring and decommissioning stale assets, to keep company data consistent, secure and accessible to non-technical stakeholders.</span></li>
-<li style="display: flex; gap: 14px"><span style="flex: 0 0 8px; height: 8px; margin-top: 8px; background: #C99A45; transform: rotate(45deg)"></span><span>Build reusable orchestration frameworks, including dynamic DAGs and custom Airflow operators, that standardize how pipelines are developed, deployed and monitored across teams.</span></li>
-<li style="display: flex; gap: 14px"><span style="flex: 0 0 8px; height: 8px; margin-top: 8px; background: #C99A45; transform: rotate(45deg)"></span><span>Develop and maintain end-to-end pipelines for internal systems and third-party vendors, including secure SFTP, cloud storage and API integrations with automated validation and alerting.</span></li>
-<li style="display: flex; gap: 14px"><span style="flex: 0 0 8px; height: 8px; margin-top: 8px; background: #C99A45; transform: rotate(45deg)"></span><span>Drive AI adoption in the data platform with Snowflake Cortex Search, Amazon Bedrock and LangChain to automate workflows and enable natural-language access to data.</span></li>
-<li style="display: flex; gap: 14px"><span style="flex: 0 0 8px; height: 8px; margin-top: 8px; background: #C99A45; transform: rotate(45deg)"></span><span>Partner with stakeholders, DevOps and leadership to turn business needs into data solutions, manage access and security, and step into team leadership when needed.</span></li>
+<div style="flex: 999 1 420px; min-width: 0; display: flex; flex-direction: column; gap: 14px">
+<h3 class="role" style="margin: 0; font-family: Fraunces, Georgia, serif; font-weight: 500; letter-spacing: -0.01em; color: #E8ECF0">Lead Data Engineer</h3>
+<ul class="bullets" style="max-width: 72ch; margin: 4px 0 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 14px; line-height: 1.6; color: #B8C1CB">
+<li style="display: flex; gap: 16px"><span style="flex: 0 0 10px; height: 1px; margin-top: 13px; background: #6B747D"></span><span><strong style="color: #E8ECF0; font-weight: 600">Led the modernization</strong> of the company's data platform, migrating from on-prem servers and legacy cron jobs to a cloud stack built on Snowflake, dbt and Airflow (MWAA), and own the upgrades of core tooling, including Airflow 3 and the dbt Fusion engine.</span></li>
+<li style="display: flex; gap: 16px"><span style="flex: 0 0 10px; height: 1px; margin-top: 13px; background: #6B747D"></span><span><strong style="color: #E8ECF0; font-weight: 600">Designed and enforced a medallion architecture,</strong> naming standards and semantic views, and lead ongoing database maintenance and governance, including role-based access, cost monitoring and decommissioning stale assets, to keep company data consistent, secure and accessible to non-technical stakeholders.</span></li>
+<li style="display: flex; gap: 16px"><span style="flex: 0 0 10px; height: 1px; margin-top: 13px; background: #6B747D"></span><span><strong style="color: #E8ECF0; font-weight: 600">Build reusable orchestration frameworks,</strong> including dynamic DAGs and custom Airflow operators, that standardize how pipelines are developed, deployed and monitored across teams.</span></li>
+<li style="display: flex; gap: 16px"><span style="flex: 0 0 10px; height: 1px; margin-top: 13px; background: #6B747D"></span><span><strong style="color: #E8ECF0; font-weight: 600">Develop and maintain end-to-end pipelines</strong> for internal systems and third-party vendors, including secure SFTP, cloud storage and API integrations with automated validation and alerting.</span></li>
+<li style="display: flex; gap: 16px"><span style="flex: 0 0 10px; height: 1px; margin-top: 13px; background: #6B747D"></span><span><strong style="color: #E8ECF0; font-weight: 600">Drive AI adoption</strong> in the data platform with Snowflake Cortex AI, Amazon Bedrock and LangChain to automate workflows and enable natural-language access to data.</span></li>
+<li style="display: flex; gap: 16px"><span style="flex: 0 0 10px; height: 1px; margin-top: 13px; background: #6B747D"></span><span><strong style="color: #E8ECF0; font-weight: 600">Partner with stakeholders,</strong> DevOps and leadership to turn business needs into data solutions, manage access and security, and step into team leadership when needed.</span></li>
 </ul>
-<div style="display: flex; flex-wrap: wrap; gap: 6px; padding-top: 4px">
-<span style="font-family: 'Geist Mono', ui-monospace, monospace; font-size: 11px; letter-spacing: .06em; padding: 4px 10px; border: 1px solid rgba(255,255,255,.18); border-radius: 999px; color: #B8C1CB">Python</span>
-<span style="font-family: 'Geist Mono', ui-monospace, monospace; font-size: 11px; letter-spacing: .06em; padding: 4px 10px; border: 1px solid rgba(255,255,255,.18); border-radius: 999px; color: #B8C1CB">dbt</span>
-<span style="font-family: 'Geist Mono', ui-monospace, monospace; font-size: 11px; letter-spacing: .06em; padding: 4px 10px; border: 1px solid rgba(255,255,255,.18); border-radius: 999px; color: #B8C1CB">Apache Airflow</span>
-<span style="font-family: 'Geist Mono', ui-monospace, monospace; font-size: 11px; letter-spacing: .06em; padding: 4px 10px; border: 1px solid rgba(255,255,255,.18); border-radius: 999px; color: #B8C1CB">Snowflake</span>
-<span style="font-family: 'Geist Mono', ui-monospace, monospace; font-size: 11px; letter-spacing: .06em; padding: 4px 10px; border: 1px solid rgba(255,255,255,.18); border-radius: 999px; color: #B8C1CB">MariaDB</span>
-<span style="font-family: 'Geist Mono', ui-monospace, monospace; font-size: 11px; letter-spacing: .06em; padding: 4px 10px; border: 1px solid rgba(255,255,255,.18); border-radius: 999px; color: #B8C1CB">Terraform</span>
-<span style="font-family: 'Geist Mono', ui-monospace, monospace; font-size: 11px; letter-spacing: .06em; padding: 4px 10px; border: 1px solid rgba(255,255,255,.18); border-radius: 999px; color: #B8C1CB">AWS</span>
-<span style="font-family: 'Geist Mono', ui-monospace, monospace; font-size: 11px; letter-spacing: .06em; padding: 4px 10px; border: 1px solid rgba(255,255,255,.18); border-radius: 999px; color: #B8C1CB">Django</span>
-<span style="font-family: 'Geist Mono', ui-monospace, monospace; font-size: 11px; letter-spacing: .06em; padding: 4px 10px; border: 1px solid rgba(255,255,255,.18); border-radius: 999px; color: #B8C1CB">Bash</span>
-<span style="font-family: 'Geist Mono', ui-monospace, monospace; font-size: 11px; letter-spacing: .06em; padding: 4px 10px; border: 1px solid rgba(255,255,255,.18); border-radius: 999px; color: #B8C1CB">Cortex Search</span>
-<span style="font-family: 'Geist Mono', ui-monospace, monospace; font-size: 11px; letter-spacing: .06em; padding: 4px 10px; border: 1px solid rgba(255,255,255,.18); border-radius: 999px; color: #B8C1CB">Amazon Bedrock</span>
-<span style="font-family: 'Geist Mono', ui-monospace, monospace; font-size: 11px; letter-spacing: .06em; padding: 4px 10px; border: 1px solid rgba(255,255,255,.18); border-radius: 999px; color: #B8C1CB">LangChain</span>
-</div>
 </div>
 </article>
-
-<article class="glass" style="display: flex; flex-wrap: wrap; gap: 28px 48px; padding: 32px; border-radius: 16px">
-<div style="flex: 0 1 250px; display: flex; flex-direction: column; gap: 10px">
-<span style="align-self: flex-start; font-family: 'Geist Mono', ui-monospace, monospace; font-size: 11px; letter-spacing: .12em; padding: 6px 12px; border-radius: 999px; background: rgba(201,154,69,.16); color: #C99A45; border: 1px solid rgba(201,154,69,.5)">2 YRS 7 MOS</span>
-<span style="font-family: 'Geist Mono', ui-monospace, monospace; font-size: 13px; letter-spacing: .06em; color: #B8C1CB; font-variant-numeric: tabular-nums">APR 2021 — NOV 2023</span>
-<span style="font-family: Fraunces, Georgia, serif; font-weight: 500; font-size: 24px">Illumination Foundation</span>
-<div style="display: flex; flex-direction: column; gap: 10px; padding-top: 6px; border-top: 1px solid rgba(255,255,255,.12)">
-<div style="display: flex; flex-direction: column; gap: 2px"><span style="font-size: 14px; color: #E8ECF0; font-weight: 500">Director of Data</span><span style="font-family: 'Geist Mono', ui-monospace, monospace; font-size: 11px; letter-spacing: .08em; color: #8F9AA6; font-variant-numeric: tabular-nums">Jul 2023 — Nov 2023</span></div>
-<div style="display: flex; flex-direction: column; gap: 2px"><span style="font-size: 14px; color: #E8ECF0; font-weight: 500">Principal Data Engineer</span><span style="font-family: 'Geist Mono', ui-monospace, monospace; font-size: 11px; letter-spacing: .08em; color: #8F9AA6; font-variant-numeric: tabular-nums">Jan 2023 — Jul 2023</span></div>
-<div style="display: flex; flex-direction: column; gap: 2px"><span style="font-size: 14px; color: #E8ECF0; font-weight: 500">Senior Data Engineer</span><span style="font-family: 'Geist Mono', ui-monospace, monospace; font-size: 11px; letter-spacing: .08em; color: #8F9AA6; font-variant-numeric: tabular-nums">Jul 2023 — Nov 2023</span></div>
-<div style="display: flex; flex-direction: column; gap: 2px"><span style="font-size: 14px; color: #E8ECF0; font-weight: 500">Data Engineer</span><span style="font-family: 'Geist Mono', ui-monospace, monospace; font-size: 11px; letter-spacing: .08em; color: #8F9AA6; font-variant-numeric: tabular-nums">Nov 2021 — Dec 2021</span></div>
-<div style="display: flex; flex-direction: column; gap: 2px"><span style="font-size: 14px; color: #E8ECF0; font-weight: 500">Data Support Specialist</span><span style="font-family: 'Geist Mono', ui-monospace, monospace; font-size: 11px; letter-spacing: .08em; color: #8F9AA6; font-variant-numeric: tabular-nums">Apr 2021 — Nov 2021</span></div>
+<article class="job" style="position: relative; display: flex; flex-wrap: wrap; gap: 16px 56px">
+<span class="node" aria-hidden="true"></span>
+<div style="flex: 0 1 240px; display: flex; flex-direction: column; gap: 10px">
+<span style="align-self: flex-start; font-family: 'Geist Mono', ui-monospace, monospace; font-size: 12px; letter-spacing: .12em; padding: 6px 12px; border-radius: 999px; background: rgba(201,154,69,.14); color: #C99A45; border: 1px solid rgba(201,154,69,.45)">2 YRS 7 MOS</span>
+<span class="label" style="color: #B8C1CB">APR 2021 — NOV 2023</span>
+<span class="company" style="font-family: Fraunces, Georgia, serif; font-weight: 500">Illumination Foundation</span>
 </div>
-</div>
-<div style="flex: 999 1 420px; min-width: 0; display: flex; flex-direction: column; gap: 16px">
-<h3 style="margin: 0; font-family: Fraunces, Georgia, serif; font-weight: 500; font-size: 30px; letter-spacing: -0.01em; color: #E8ECF0">Director of Data</h3>
-<ul style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 12px; font-size: 16px; line-height: 1.55; color: #D5DBE1">
-<li style="display: flex; gap: 14px"><span style="flex: 0 0 8px; height: 8px; margin-top: 8px; background: #C99A45; transform: rotate(45deg)"></span><span>Initiated the migration of a Python-script pipeline and database from a Windows environment to Apache Airflow on Docker containers in Linux.</span></li>
-<li style="display: flex; gap: 14px"><span style="flex: 0 0 8px; height: 8px; margin-top: 8px; background: #C99A45; transform: rotate(45deg)"></span><span>Expanded the scope of data collection to include financial and HR data.</span></li>
-<li style="display: flex; gap: 14px"><span style="flex: 0 0 8px; height: 8px; margin-top: 8px; background: #C99A45; transform: rotate(45deg)"></span><span>Led development of a web application in React, Node.js, Express and MySQL that saved hundreds of hours of manual work and collected data for analysis.</span></li>
-<li style="display: flex; gap: 14px"><span style="flex: 0 0 8px; height: 8px; margin-top: 8px; background: #C99A45; transform: rotate(45deg)"></span><span>Handled application security and deployment through Cloudflare Tunnel (cloudflared).</span></li>
-<li style="display: flex; gap: 14px"><span style="flex: 0 0 8px; height: 8px; margin-top: 8px; background: #C99A45; transform: rotate(45deg)"></span><span>Partnered with departments across the organization to understand their processes and improve workflows with technical solutions.</span></li>
-<li style="display: flex; gap: 14px"><span style="flex: 0 0 8px; height: 8px; margin-top: 8px; background: #C99A45; transform: rotate(45deg)"></span><span>Automated and built reports, and developed Tableau dashboards that drove analysis and optimized operational workflows.</span></li>
-<li style="display: flex; gap: 14px"><span style="flex: 0 0 8px; height: 8px; margin-top: 8px; background: #C99A45; transform: rotate(45deg)"></span><span>Worked with partners to migrate data and develop a new EMR system on Google Cloud.</span></li>
+<div style="flex: 999 1 420px; min-width: 0; display: flex; flex-direction: column; gap: 14px">
+<h3 class="role" style="margin: 0; font-family: Fraunces, Georgia, serif; font-weight: 500; letter-spacing: -0.01em; color: #E8ECF0">Director of Data</h3>
+<span class="label" style="color: #A3ADB8">DATA SUPPORT SPECIALIST → DATA ENGINEER → SENIOR → PRINCIPAL → DIRECTOR</span>
+<ul class="bullets" style="max-width: 72ch; margin: 4px 0 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 14px; line-height: 1.6; color: #B8C1CB">
+<li style="display: flex; gap: 16px"><span style="flex: 0 0 10px; height: 1px; margin-top: 13px; background: #6B747D"></span><span><strong style="color: #E8ECF0; font-weight: 600">Initiated the migration</strong> of a Python-script pipeline and database from a Windows environment to Apache Airflow on Docker containers in Linux.</span></li>
+<li style="display: flex; gap: 16px"><span style="flex: 0 0 10px; height: 1px; margin-top: 13px; background: #6B747D"></span><span><strong style="color: #E8ECF0; font-weight: 600">Expanded the scope of data collection</strong> to include financial and HR data.</span></li>
+<li style="display: flex; gap: 16px"><span style="flex: 0 0 10px; height: 1px; margin-top: 13px; background: #6B747D"></span><span><strong style="color: #E8ECF0; font-weight: 600">Led development of a web application</strong> in React, Node.js, Express and MySQL that saved hundreds of hours of manual work and collected data for analysis.</span></li>
+<li style="display: flex; gap: 16px"><span style="flex: 0 0 10px; height: 1px; margin-top: 13px; background: #6B747D"></span><span><strong style="color: #E8ECF0; font-weight: 600">Handled application security and deployment</strong> through Cloudflare Tunnel (cloudflared).</span></li>
+<li style="display: flex; gap: 16px"><span style="flex: 0 0 10px; height: 1px; margin-top: 13px; background: #6B747D"></span><span><strong style="color: #E8ECF0; font-weight: 600">Partnered with departments</strong> across the organization to understand their processes and improve workflows with technical solutions.</span></li>
+<li style="display: flex; gap: 16px"><span style="flex: 0 0 10px; height: 1px; margin-top: 13px; background: #6B747D"></span><span><strong style="color: #E8ECF0; font-weight: 600">Automated and built reports,</strong> and developed Tableau dashboards that drove analysis and optimized operational workflows.</span></li>
+<li style="display: flex; gap: 16px"><span style="flex: 0 0 10px; height: 1px; margin-top: 13px; background: #6B747D"></span><span><strong style="color: #E8ECF0; font-weight: 600">Worked with partners to migrate data</strong> and develop a new EMR system on Google Cloud.</span></li>
 </ul>
-<div style="display: flex; flex-wrap: wrap; gap: 6px; padding-top: 4px">
-<span style="font-family: 'Geist Mono', ui-monospace, monospace; font-size: 11px; letter-spacing: .06em; padding: 4px 10px; border: 1px solid rgba(255,255,255,.18); border-radius: 999px; color: #B8C1CB">Python</span>
-<span style="font-family: 'Geist Mono', ui-monospace, monospace; font-size: 11px; letter-spacing: .06em; padding: 4px 10px; border: 1px solid rgba(255,255,255,.18); border-radius: 999px; color: #B8C1CB">BigQuery</span>
-<span style="font-family: 'Geist Mono', ui-monospace, monospace; font-size: 11px; letter-spacing: .06em; padding: 4px 10px; border: 1px solid rgba(255,255,255,.18); border-radius: 999px; color: #B8C1CB">MySQL</span>
-<span style="font-family: 'Geist Mono', ui-monospace, monospace; font-size: 11px; letter-spacing: .06em; padding: 4px 10px; border: 1px solid rgba(255,255,255,.18); border-radius: 999px; color: #B8C1CB">Apache Airflow</span>
-<span style="font-family: 'Geist Mono', ui-monospace, monospace; font-size: 11px; letter-spacing: .06em; padding: 4px 10px; border: 1px solid rgba(255,255,255,.18); border-radius: 999px; color: #B8C1CB">Docker</span>
-<span style="font-family: 'Geist Mono', ui-monospace, monospace; font-size: 11px; letter-spacing: .06em; padding: 4px 10px; border: 1px solid rgba(255,255,255,.18); border-radius: 999px; color: #B8C1CB">Tableau</span>
-<span style="font-family: 'Geist Mono', ui-monospace, monospace; font-size: 11px; letter-spacing: .06em; padding: 4px 10px; border: 1px solid rgba(255,255,255,.18); border-radius: 999px; color: #B8C1CB">Power BI</span>
-<span style="font-family: 'Geist Mono', ui-monospace, monospace; font-size: 11px; letter-spacing: .06em; padding: 4px 10px; border: 1px solid rgba(255,255,255,.18); border-radius: 999px; color: #B8C1CB">React</span>
-<span style="font-family: 'Geist Mono', ui-monospace, monospace; font-size: 11px; letter-spacing: .06em; padding: 4px 10px; border: 1px solid rgba(255,255,255,.18); border-radius: 999px; color: #B8C1CB">Node.js</span>
-<span style="font-family: 'Geist Mono', ui-monospace, monospace; font-size: 11px; letter-spacing: .06em; padding: 4px 10px; border: 1px solid rgba(255,255,255,.18); border-radius: 999px; color: #B8C1CB">Express</span>
-<span style="font-family: 'Geist Mono', ui-monospace, monospace; font-size: 11px; letter-spacing: .06em; padding: 4px 10px; border: 1px solid rgba(255,255,255,.18); border-radius: 999px; color: #B8C1CB">Bash</span>
-</div>
 </div>
 </article>
-
-<article class="glass" style="display: flex; flex-wrap: wrap; gap: 28px 48px; padding: 32px; border-radius: 16px">
-<div style="flex: 0 1 250px; display: flex; flex-direction: column; gap: 10px">
-<span style="align-self: flex-start; font-family: 'Geist Mono', ui-monospace, monospace; font-size: 11px; letter-spacing: .12em; padding: 6px 12px; border-radius: 999px; background: rgba(201,154,69,.16); color: #C99A45; border: 1px solid rgba(201,154,69,.5)">1 YR 3 MOS</span>
-<span style="font-family: 'Geist Mono', ui-monospace, monospace; font-size: 13px; letter-spacing: .06em; color: #B8C1CB; font-variant-numeric: tabular-nums">JAN 2020 — APR 2021</span>
-<span style="font-family: Fraunces, Georgia, serif; font-weight: 500; font-size: 24px">Coding Minds Academy</span>
+<article class="job" style="position: relative; display: flex; flex-wrap: wrap; gap: 16px 56px">
+<span class="node" aria-hidden="true"></span>
+<div style="flex: 0 1 240px; display: flex; flex-direction: column; gap: 10px">
+<span style="align-self: flex-start; font-family: 'Geist Mono', ui-monospace, monospace; font-size: 12px; letter-spacing: .12em; padding: 6px 12px; border-radius: 999px; background: rgba(201,154,69,.14); color: #C99A45; border: 1px solid rgba(201,154,69,.45)">1 YR 3 MOS</span>
+<span class="label" style="color: #B8C1CB">JAN 2020 — APR 2021</span>
+<span class="company" style="font-family: Fraunces, Georgia, serif; font-weight: 500">Coding Minds Academy</span>
 </div>
-<div style="flex: 999 1 420px; min-width: 0; display: flex; flex-direction: column; gap: 16px">
-<h3 style="margin: 0; font-family: Fraunces, Georgia, serif; font-weight: 500; font-size: 30px; letter-spacing: -0.01em; color: #E8ECF0">Coding Instructor</h3>
-<ul style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 12px; font-size: 16px; line-height: 1.55; color: #D5DBE1">
-<li style="display: flex; gap: 14px"><span style="flex: 0 0 8px; height: 8px; margin-top: 8px; background: #C99A45; transform: rotate(45deg)"></span><span>Developed and implemented course curricula and programming activities, and taught classes on Python fundamentals, algorithms and web development.</span></li>
-<li style="display: flex; gap: 14px"><span style="flex: 0 0 8px; height: 8px; margin-top: 8px; background: #C99A45; transform: rotate(45deg)"></span><span>Reviewed assignments, monitored student progress, gave feedback to parents, and helped students with personal coding projects.</span></li>
+<div style="flex: 999 1 420px; min-width: 0; display: flex; flex-direction: column; gap: 14px">
+<h3 class="role" style="margin: 0; font-family: Fraunces, Georgia, serif; font-weight: 500; letter-spacing: -0.01em; color: #E8ECF0">Coding Instructor</h3>
+<ul class="bullets" style="max-width: 72ch; margin: 4px 0 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 14px; line-height: 1.6; color: #B8C1CB">
+<li style="display: flex; gap: 16px"><span style="flex: 0 0 10px; height: 1px; margin-top: 13px; background: #6B747D"></span><span><strong style="color: #E8ECF0; font-weight: 600">Developed and implemented course curricula</strong> and programming activities, and taught classes on Python fundamentals, algorithms and web development.</span></li>
+<li style="display: flex; gap: 16px"><span style="flex: 0 0 10px; height: 1px; margin-top: 13px; background: #6B747D"></span><span><strong style="color: #E8ECF0; font-weight: 600">Reviewed assignments,</strong> monitored student progress, gave feedback to parents, and helped students with personal coding projects.</span></li>
 </ul>
-<div style="display: flex; flex-wrap: wrap; gap: 6px; padding-top: 4px">
-<span style="font-family: 'Geist Mono', ui-monospace, monospace; font-size: 11px; letter-spacing: .06em; padding: 4px 10px; border: 1px solid rgba(255,255,255,.18); border-radius: 999px; color: #B8C1CB">Python</span>
-<span style="font-family: 'Geist Mono', ui-monospace, monospace; font-size: 11px; letter-spacing: .06em; padding: 4px 10px; border: 1px solid rgba(255,255,255,.18); border-radius: 999px; color: #B8C1CB">JavaScript</span>
-<span style="font-family: 'Geist Mono', ui-monospace, monospace; font-size: 11px; letter-spacing: .06em; padding: 4px 10px; border: 1px solid rgba(255,255,255,.18); border-radius: 999px; color: #B8C1CB">HTML</span>
-<span style="font-family: 'Geist Mono', ui-monospace, monospace; font-size: 11px; letter-spacing: .06em; padding: 4px 10px; border: 1px solid rgba(255,255,255,.18); border-radius: 999px; color: #B8C1CB">CSS</span>
-</div>
 </div>
 </article>
-</section>
-
-<section id="skills" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px">
-<div class="glass" style="padding: 32px; border-radius: 16px; display: flex; flex-direction: column; gap: 20px">
-<h2 style="margin: 0; font-family: Fraunces, Georgia, serif; font-weight: 500; font-size: 36px; letter-spacing: -0.02em">Skills</h2>
-<div style="display: flex; flex-direction: column; gap: 14px; font-size: 15px; line-height: 1.5">
-<div style="display: flex; flex-wrap: wrap; gap: 4px 16px"><span style="flex: 0 0 140px; font-family: 'Geist Mono', ui-monospace, monospace; font-size: 11px; letter-spacing: .12em; color: #C99A45; padding-top: 3px">ORCHESTRATION</span><span style="flex: 1 1 200px">Apache Airflow, Docker</span></div>
-<div style="display: flex; flex-wrap: wrap; gap: 4px 16px"><span style="flex: 0 0 140px; font-family: 'Geist Mono', ui-monospace, monospace; font-size: 11px; letter-spacing: .12em; color: #C99A45; padding-top: 3px">TRANSFORMATION</span><span style="flex: 1 1 200px">dbt, SQL, medallion architecture</span></div>
-<div style="display: flex; flex-wrap: wrap; gap: 4px 16px"><span style="flex: 0 0 140px; font-family: 'Geist Mono', ui-monospace, monospace; font-size: 11px; letter-spacing: .12em; color: #C99A45; padding-top: 3px">DATA STORES</span><span style="flex: 1 1 200px">Snowflake, BigQuery, MySQL, MariaDB</span></div>
-<div style="display: flex; flex-wrap: wrap; gap: 4px 16px"><span style="flex: 0 0 140px; font-family: 'Geist Mono', ui-monospace, monospace; font-size: 11px; letter-spacing: .12em; color: #C99A45; padding-top: 3px">LANGUAGES</span><span style="flex: 1 1 200px">Python, JavaScript, Bash, HTML, CSS</span></div>
-<div style="display: flex; flex-wrap: wrap; gap: 4px 16px"><span style="flex: 0 0 140px; font-family: 'Geist Mono', ui-monospace, monospace; font-size: 11px; letter-spacing: .12em; color: #C99A45; padding-top: 3px">CLOUD</span><span style="flex: 1 1 200px">AWS (SNS, SQS, Kinesis Firehose, Glue, Lambda, CloudFormation, EventBridge), Google Cloud, Terraform</span></div>
-<div style="display: flex; flex-wrap: wrap; gap: 4px 16px"><span style="flex: 0 0 140px; font-family: 'Geist Mono', ui-monospace, monospace; font-size: 11px; letter-spacing: .12em; color: #C99A45; padding-top: 3px">BI &amp; APPS</span><span style="flex: 1 1 200px">Tableau, Power BI, Django, React, Node.js, Express</span></div>
-<div style="display: flex; flex-wrap: wrap; gap: 4px 16px"><span style="flex: 0 0 140px; font-family: 'Geist Mono', ui-monospace, monospace; font-size: 11px; letter-spacing: .12em; color: #C99A45; padding-top: 3px">AI / LLM</span><span style="flex: 1 1 200px">LangChain</span></div>
-</div>
-</div>
-<div class="glass" style="padding: 32px; border-radius: 16px; display: flex; flex-direction: column; gap: 20px; align-self: start">
-<h2 style="margin: 0; font-family: Fraunces, Georgia, serif; font-weight: 500; font-size: 36px; letter-spacing: -0.02em">Education</h2>
-<div style="display: flex; flex-direction: column; gap: 6px">
-<span style="font-weight: 600; font-size: 17px">University of California, Irvine</span>
-<span style="font-size: 14px; color: #B8C1CB">BA, Psychology &amp; Social Behavior</span>
-<span style="font-size: 14px; color: #B8C1CB">BA, Education</span>
-<span style="font-family: 'Geist Mono', ui-monospace, monospace; font-size: 11px; letter-spacing: .08em; color: #8F9AA6">2012 — 2016</span>
-</div>
 </div>
 </section>
 
-<footer style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; font-family: 'Geist Mono', ui-monospace, monospace; font-size: 11px; letter-spacing: .12em; color: #8F9AA6">
-<span>© 2026 JEREMY XU</span>
-<span>LEAD DATA ENGINEER</span>
+<section id="skills" class="sec" style="display: flex; flex-direction: column; gap: 24px">
+<h2 class="h2" style="margin: 0; font-family: Fraunces, Georgia, serif; font-weight: 500; letter-spacing: -0.02em">Skills</h2>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); column-gap: 48px">
+<div style="display: flex; flex-direction: column; gap: 6px; padding: 18px 0; border-top: 1px solid rgba(255,255,255,.12)"><span class="label" style="color: #A3ADB8">ORCHESTRATION</span><span style="font-size: 16px; line-height: 1.5; color: #D5DBE1">Apache Airflow (MWAA)</span></div>
+<div style="display: flex; flex-direction: column; gap: 6px; padding: 18px 0; border-top: 1px solid rgba(255,255,255,.12)"><span class="label" style="color: #A3ADB8">TRANSFORMATION</span><span style="font-size: 16px; line-height: 1.5; color: #D5DBE1">dbt, SQL, medallion architecture</span></div>
+<div style="display: flex; flex-direction: column; gap: 6px; padding: 18px 0; border-top: 1px solid rgba(255,255,255,.12)"><span class="label" style="color: #A3ADB8">DATA STORES</span><span style="font-size: 16px; line-height: 1.5; color: #D5DBE1">Snowflake, BigQuery, PostgreSQL, MySQL, MariaDB</span></div>
+<div style="display: flex; flex-direction: column; gap: 6px; padding: 18px 0; border-top: 1px solid rgba(255,255,255,.12)"><span class="label" style="color: #A3ADB8">LANGUAGES</span><span style="font-size: 16px; line-height: 1.5; color: #D5DBE1">Python, JavaScript, Bash, HTML, CSS</span></div>
+<div style="display: flex; flex-direction: column; gap: 6px; padding: 18px 0; border-top: 1px solid rgba(255,255,255,.12)"><span class="label" style="color: #A3ADB8">CLOUD</span><span style="font-size: 16px; line-height: 1.5; color: #D5DBE1">AWS (SNS, SQS, Kinesis Firehose, Glue, Lambda, CloudFormation, EventBridge), Google Cloud</span></div>
+<div style="display: flex; flex-direction: column; gap: 6px; padding: 18px 0; border-top: 1px solid rgba(255,255,255,.12)"><span class="label" style="color: #A3ADB8">INFRASTRUCTURE &amp; DEVOPS</span><span style="font-size: 16px; line-height: 1.5; color: #D5DBE1">Terraform, Docker, CI/CD</span></div>
+<div style="display: flex; flex-direction: column; gap: 6px; padding: 18px 0; border-top: 1px solid rgba(255,255,255,.12)"><span class="label" style="color: #A3ADB8">BI &amp; APPS</span><span style="font-size: 16px; line-height: 1.5; color: #D5DBE1">Tableau, Power BI, Django, React, Node.js, Express</span></div>
+<div style="display: flex; flex-direction: column; gap: 6px; padding: 18px 0; border-top: 1px solid rgba(255,255,255,.12)"><span class="label" style="color: #A3ADB8">AI / LLM</span><span style="font-size: 16px; line-height: 1.5; color: #D5DBE1">Snowflake Cortex AI, Amazon Bedrock, LangChain</span></div>
+</div>
+<div style="display: flex; flex-wrap: wrap; align-items: baseline; gap: 8px 24px; padding: 20px 0; border-top: 1px solid rgba(255,255,255,.12); border-bottom: 1px solid rgba(255,255,255,.12)">
+<span class="label" style="color: #A3ADB8">EDUCATION</span>
+<span style="font-size: 16px; font-weight: 600; color: #E8ECF0">University of California, Irvine</span>
+<span style="font-size: 15px; color: #B8C1CB">BA, Psychology &amp; Social Behavior · BA, Education</span>
+<span class="label" style="color: #A3ADB8">2012 — 2016</span>
+</div>
+</section>
+
+<section id="contact" class="sec" style="display: flex; flex-direction: column; gap: 24px; padding-bottom: 24px">
+<span class="label" style="color: #A3ADB8">GET IN TOUCH</span>
+<h2 class="closing" style="margin: 0; font-family: Fraunces, Georgia, serif; font-weight: 500; line-height: 1.02; letter-spacing: -0.025em; max-width: 14ch; text-wrap: balance">Let's build something <em style="color: #C99A45; font-style: italic">reliable</em>.</h2>
+<div style="display: flex; flex-wrap: wrap; gap: 12px 32px; font-size: 18px">
+<a href="mailto:jeremyxu24@gmail.com" style="color: #E8ECF0; text-underline-offset: 6px">jeremyxu24@gmail.com</a>
+<a href="https://github.com/jeremyxu2-swe" style="color: #E8ECF0; text-underline-offset: 6px">github.com/jeremyxu2-swe</a>
+<a href="https://www.linkedin.com/" style="color: #E8ECF0; text-underline-offset: 6px">LinkedIn</a>
+<a href="https://jeremyxu2-swe.github.io/resume/Jeremy_Xu_Resume.pdf" download="Jeremy_Xu_Resume.pdf" style="color: #E8ECF0; text-underline-offset: 6px">Download résumé (PDF)</a>
+</div>
+</section>
+
+<footer style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; padding-top: 24px; border-top: 1px solid rgba(255,255,255,.14)">
+<span class="label" style="color: #8F9AA6">© 2026 JEREMY XU</span>
+<span class="label" style="color: #8F9AA6">LEAD DATA ENGINEER</span>
 </footer>
 </div>
 </div>
