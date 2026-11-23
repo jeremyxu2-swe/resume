@@ -61,14 +61,16 @@ button:focus-visible,a:focus-visible{outline:2px solid #C99A45;outline-offset:3p
 .veil{opacity:0;animation:veil linear both;animation-timeline:scroll(root);animation-range:0px 700px}
 @keyframes veil{to{opacity:.84}}
 @supports not (animation-timeline: scroll()){.veil{animation:none;opacity:.6}}
+.h3s{font-size:32px}
+.edeg{font-size:16px;line-height:1.5}
 .clinks{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:56px;border-top:1px solid rgba(255,255,255,.14);margin-top:16px}
 .clink{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:24px 0;border-bottom:1px solid rgba(255,255,255,.14);text-decoration:none;color:#E8ECF0}
 .cval{font-family:Fraunces,Georgia,serif;font-size:24px;letter-spacing:-0.01em;overflow-wrap:anywhere;transition:color .2s ease}
 .arr{flex:0 0 44px;width:44px;height:44px;border-radius:50%;border:1px solid rgba(255,255,255,.22);display:flex;align-items:center;justify-content:center;color:#E8ECF0;transition:background .2s ease,border-color .2s ease,color .2s ease,transform .2s ease}
 .clink:hover .cval,.clink:focus-visible .cval{color:#C99A45}
 .clink:hover .arr,.clink:focus-visible .arr{background:#C99A45;border-color:#C99A45;color:#0E1217;transform:translate(3px,-3px)}
-@media (min-width: 601px){.wrap{padding-left:72px !important;padding-right:72px !important}.label{font-size:10.2px}.name{font-size:clamp(54px,8.5vw,112px)}.statement{font-size:clamp(22px,2.7vw,32px)}.about{font-size:16px}.h2{font-size:48px}.company{font-size:20px}.role{font-size:25.5px}.bullets{font-size:13.6px}.closing{font-size:clamp(37px,5.1vw,68px)}.wrap [style*="font-size: 12px"]{font-size:10.2px !important}.wrap [style*="font-size: 13px"]{font-size:11px !important}.wrap [style*="font-size: 15px"]{font-size:12.8px !important}.wrap [style*="font-size: 16px"]{font-size:13.6px !important}.wrap [style*="font-size: 18px"]{font-size:15.3px !important}.wrap [style*="font-size: 20px"]{font-size:17px !important}}
-@media (max-width: 600px){.srow{padding:11px 0 !important;gap:4px !important}.srow .label{font-size:10px}.sval{font-family:Fraunces,Georgia,serif;font-size:14px !important;color:#E8ECF0 !important}.edu{padding:11px 0 !important;gap:4px 12px !important}.edu .label{font-size:10px}.edu span{font-size:14px !important}.clinks{grid-template-columns:minmax(0,1fr)}.cval{font-size:14px}.clink{padding:11px 0}.arr{flex-basis:30px;width:30px;height:30px}.arr svg{width:12px;height:12px}.clink .label{font-size:10px}
+@media (min-width: 601px){.h3s{font-size:27px}.edeg{font-size:13.6px}.wrap{padding-left:72px !important;padding-right:72px !important}.label{font-size:10.2px}.name{font-size:clamp(54px,8.5vw,112px)}.statement{font-size:clamp(22px,2.7vw,32px)}.about{font-size:16px}.h2{font-size:48px}.company{font-size:20px}.role{font-size:25.5px}.bullets{font-size:13.6px}.closing{font-size:clamp(37px,5.1vw,68px)}.wrap [style*="font-size: 12px"]{font-size:10.2px !important}.wrap [style*="font-size: 13px"]{font-size:11px !important}.wrap [style*="font-size: 15px"]{font-size:12.8px !important}.wrap [style*="font-size: 16px"]{font-size:13.6px !important}.wrap [style*="font-size: 18px"]{font-size:15.3px !important}.wrap [style*="font-size: 20px"]{font-size:17px !important}}
+@media (max-width: 600px){.h3s{font-size:24px}.edeg{font-size:14px}.edu2 .company{font-size:17px !important;font-family:Fraunces,Georgia,serif !important;color:#E8ECF0 !important}.srow{padding:11px 0 !important;gap:4px !important}.srow .label{font-size:10px}.sval{font-family:Fraunces,Georgia,serif;font-size:14px !important;color:#E8ECF0 !important}.edu{padding:11px 0 !important;gap:4px 12px !important}.edu .label{font-size:10px}.edu span{font-size:14px !important}.clinks{grid-template-columns:minmax(0,1fr)}.cval{font-size:14px}.clink{padding:11px 0}.arr{flex-basis:30px;width:30px;height:30px}.arr svg{width:12px;height:12px}.clink .label{font-size:10px}
 .hero{padding:56px 0 48px}
 .sec{margin-top:72px}
 .about{font-size:16px}
@@ -1078,11 +1080,16 @@ button:focus-visible,a:focus-visible{outline:2px solid #C99A45;outline-offset:3p
 <div class="srow" style="display: flex; flex-direction: column; gap: 6px; padding: 18px 0; border-top: 1px solid rgba(255,255,255,.12)"><span class="label" style="color: #A3ADB8">BI &amp; APPS</span><span class="sval" style="font-size: 16px; line-height: 1.5; color: #D5DBE1">Tableau, Power BI, Django, React, Node.js, Express</span></div>
 <div class="srow" style="display: flex; flex-direction: column; gap: 6px; padding: 18px 0; border-top: 1px solid rgba(255,255,255,.12)"><span class="label" style="color: #A3ADB8">AI / LLM</span><span class="sval" style="font-size: 16px; line-height: 1.5; color: #D5DBE1">Snowflake Cortex AI, Amazon Bedrock, LangChain</span></div>
 </div>
-<div class="edu" style="display: flex; flex-wrap: wrap; align-items: baseline; gap: 8px 24px; padding: 20px 0; border-top: 1px solid rgba(255,255,255,.12); border-bottom: 1px solid rgba(255,255,255,.12)">
-<span class="label" style="color: #A3ADB8">EDUCATION</span>
-<span style="font-size: 16px; font-weight: 600; color: #E8ECF0">University of California, Irvine</span>
-<span style="font-size: 15px; color: #B8C1CB">BA, Psychology &amp; Social Behavior · BA, Education</span>
+<div class="edu2" style="display: flex; flex-direction: column; gap: 20px; padding-top: 32px">
+<h3 class="h3s" style="margin: 0; font-family: Fraunces, Georgia, serif; font-weight: 500; letter-spacing: -0.01em; color: #E8ECF0">Education</h3>
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: 8px 32px; padding: 20px 0; border-top: 1px solid rgba(255,255,255,.12); border-bottom: 1px solid rgba(255,255,255,.12)">
+<div style="display: flex; flex-direction: column; gap: 6px">
+<span class="company" style="font-family: Fraunces, Georgia, serif; font-weight: 500; color: #E8ECF0">University of California, Irvine</span>
+<span class="edeg" style="color: #B8C1CB">BA, Psychology &amp; Social Behavior</span>
+<span class="edeg" style="color: #B8C1CB">BA, Education</span>
+</div>
 <span class="label" style="color: #A3ADB8">2012 — 2016</span>
+</div>
 </div>
 </section>
 
