@@ -69,7 +69,7 @@ button:focus-visible,a:focus-visible{outline:2px solid #C99A45;outline-offset:3p
 .arr{flex:0 0 44px;width:44px;height:44px;border-radius:50%;border:1px solid rgba(255,255,255,.22);display:flex;align-items:center;justify-content:center;color:#E8ECF0;transition:background .2s ease,border-color .2s ease,color .2s ease,transform .2s ease}
 .clink:hover .cval,.clink:focus-visible .cval{color:#C99A45}
 .clink:hover .arr,.clink:focus-visible .arr{background:#C99A45;border-color:#C99A45;color:#0E1217;transform:translate(3px,-3px)}
-@media (min-width: 601px){.hero{padding-bottom:40px}#about{margin-top:40px}.h3s{font-size:27px}.edeg{font-size:13.6px}.wrap{padding-left:72px !important;padding-right:72px !important}.label{font-size:10.2px}.name{font-size:clamp(54px,8.5vw,112px)}.statement{font-size:clamp(22px,2.7vw,32px)}.about{font-size:16px}.h2{font-size:48px}.company{font-size:20px}.role{font-size:25.5px}.bullets{font-size:13.6px}.closing{font-size:clamp(37px,5.1vw,68px)}.wrap [style*="font-size: 12px"]{font-size:10.2px !important}.wrap [style*="font-size: 13px"]{font-size:11px !important}.wrap [style*="font-size: 15px"]{font-size:12.8px !important}.wrap [style*="font-size: 16px"]{font-size:13.6px !important}.wrap [style*="font-size: 18px"]{font-size:15.3px !important}.wrap [style*="font-size: 20px"]{font-size:17px !important}}
+@media (min-width: 601px){.hero{padding-bottom:40px}#about{margin-top:40px}#experience{margin-top:64px}.h3s{font-size:27px}.edeg{font-size:13.6px}.wrap{padding-left:72px !important;padding-right:72px !important}.label{font-size:10.2px}.name{font-size:clamp(54px,8.5vw,112px)}.statement{font-size:clamp(22px,2.7vw,32px)}.about{font-size:16px}.h2{font-size:48px}.company{font-size:20px}.role{font-size:25.5px}.bullets{font-size:13.6px}.closing{font-size:clamp(37px,5.1vw,68px)}.wrap [style*="font-size: 12px"]{font-size:10.2px !important}.wrap [style*="font-size: 13px"]{font-size:11px !important}.wrap [style*="font-size: 15px"]{font-size:12.8px !important}.wrap [style*="font-size: 16px"]{font-size:13.6px !important}.wrap [style*="font-size: 18px"]{font-size:15.3px !important}.wrap [style*="font-size: 20px"]{font-size:17px !important}}
 @media (max-width: 600px){.h3s{font-size:24px}.edeg{font-size:14px}.edu2 .company{font-size:17px !important;font-family:Fraunces,Georgia,serif !important;color:#E8ECF0 !important}.srow{padding:11px 0 !important;gap:4px !important}.srow .label{font-size:10px}.sval{font-family:Fraunces,Georgia,serif;font-size:14px !important;color:#E8ECF0 !important}.edu{padding:11px 0 !important;gap:4px 12px !important}.edu .label{font-size:10px}.edu span{font-size:14px !important}.clinks{grid-template-columns:minmax(0,1fr)}.cval{font-size:14px}.clink{padding:11px 0}.arr{flex-basis:30px;width:30px;height:30px}.arr svg{width:12px;height:12px}.clink .label{font-size:10px}
 .hero{padding:56px 0 48px}
 .sec{margin-top:72px}
@@ -997,9 +997,9 @@ button:focus-visible,a:focus-visible{outline:2px solid #C99A45;outline-offset:3p
 </div>
 </section>
 
-<section id="about" class="sec" style="display: flex; flex-wrap: wrap; gap: 16px 56px; padding-top: 32px; border-top: 1px solid rgba(255,255,255,.14)">
-<h2 class="label" style="flex: 0 1 240px; margin: 0; font-weight: 400; color: #A3ADB8">ABOUT</h2>
-<p class="about" style="flex: 999 1 420px; min-width: 0; margin: 0; line-height: 1.6; color: #D5DBE1; max-width: 62ch">I'm a Lead Data Engineer who builds the pipelines and platforms that give companies clean, reliable data for every decision. I came to engineering by an unconventional route, from psychology and education through data analytics and web development, which gave me a strong sense of how people actually use data. I'm self-taught, I learn quickly, and I love building foundations with Snowflake, dbt and Airflow that teams can grow on.</p>
+<section id="about" class="sec" style="display: flex; flex-direction: column; gap: 20px; padding-top: 40px; border-top: 1px solid rgba(255,255,255,.14)">
+<h2 class="h2" style="margin: 0; font-family: Fraunces, Georgia, serif; font-weight: 500; letter-spacing: -0.02em">About</h2>
+<p class="about" style="margin: 0; line-height: 1.65; color: #D5DBE1; max-width: 72ch">I'm a Lead Data Engineer who builds the pipelines and platforms that give companies clean, reliable data for every decision. I came to engineering by an unconventional route, from psychology and education through data analytics and web development, which gave me a strong sense of how people actually use data. I'm self-taught, I learn quickly, and I love building foundations with Snowflake, dbt and Airflow that teams can grow on.</p>
 </section>
 
 <section id="experience" class="sec" style="display: flex; flex-direction: column; gap: 48px">
@@ -1009,16 +1009,16 @@ button:focus-visible,a:focus-visible{outline:2px solid #C99A45;outline-offset:3p
 </div>
 <div class="timeline">
 <span class="spine-dot" aria-hidden="true"></span>
-<article class="job" style="position: relative; display: flex; flex-wrap: wrap; gap: 16px 56px">
+<article class="job" style="position: relative; display: flex; flex-wrap: wrap; gap: 16px 40px">
 <span class="node" aria-hidden="true"></span>
-<div style="flex: 0 1 240px; display: flex; flex-direction: column; gap: 10px">
+<div style="flex: 0 1 200px; display: flex; flex-direction: column; gap: 10px">
 <span style="align-self: flex-start; font-family: 'Geist Mono', ui-monospace, monospace; font-size: 12px; letter-spacing: .12em; padding: 6px 12px; border-radius: 999px; background: rgba(201,154,69,.14); color: #C99A45; border: 1px solid rgba(201,154,69,.45)">3 YEARS</span>
 <span class="label" style="color: #B8C1CB">NOV 2023 — PRESENT</span>
 <span class="company" style="font-family: Fraunces, Georgia, serif; font-weight: 500">Americor</span>
 </div>
 <div style="flex: 999 1 420px; min-width: 0; display: flex; flex-direction: column; gap: 14px">
 <h3 class="role" style="margin: 0; font-family: Fraunces, Georgia, serif; font-weight: 500; letter-spacing: -0.01em; color: #E8ECF0">Lead Data Engineer</h3>
-<ul class="bullets" style="max-width: 72ch; margin: 4px 0 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 14px; line-height: 1.6; color: #B8C1CB">
+<ul class="bullets" style="max-width: 88ch; margin: 4px 0 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 14px; line-height: 1.6; color: #B8C1CB">
 <li style="display: flex; gap: 16px"><span style="flex: 0 0 10px; height: 1px; margin-top: 13px; background: #6B747D"></span><span><strong style="color: #E8ECF0; font-weight: 600">Led the modernization</strong> of the company's data platform, migrating from on-prem servers and legacy cron jobs to a cloud stack built on Snowflake, dbt and Airflow (MWAA), and own the upgrades of core tooling, including Airflow 3 and the dbt Fusion engine.</span></li>
 <li style="display: flex; gap: 16px"><span style="flex: 0 0 10px; height: 1px; margin-top: 13px; background: #6B747D"></span><span><strong style="color: #E8ECF0; font-weight: 600">Lead data governance and database maintenance,</strong> setting company-wide Snowflake naming standards, role-based access, cost monitoring and the decommissioning of stale assets to keep the platform secure and cost-efficient.</span></li>
 <li style="display: flex; gap: 16px"><span style="flex: 0 0 10px; height: 1px; margin-top: 13px; background: #6B747D"></span><span><strong style="color: #E8ECF0; font-weight: 600">Led the shift to an AI-ready warehouse,</strong> structuring data with a dbt medallion architecture and Snowflake Semantic Views so non-technical teams and AI assistants like Claude can query trusted data in plain English.</span></li>
@@ -1030,9 +1030,9 @@ button:focus-visible,a:focus-visible{outline:2px solid #C99A45;outline-offset:3p
 </ul>
 </div>
 </article>
-<article class="job" style="position: relative; display: flex; flex-wrap: wrap; gap: 16px 56px">
+<article class="job" style="position: relative; display: flex; flex-wrap: wrap; gap: 16px 40px">
 <span class="node" aria-hidden="true"></span>
-<div style="flex: 0 1 240px; display: flex; flex-direction: column; gap: 10px">
+<div style="flex: 0 1 200px; display: flex; flex-direction: column; gap: 10px">
 <span style="align-self: flex-start; font-family: 'Geist Mono', ui-monospace, monospace; font-size: 12px; letter-spacing: .12em; padding: 6px 12px; border-radius: 999px; background: rgba(201,154,69,.14); color: #C99A45; border: 1px solid rgba(201,154,69,.45)">2 YRS 7 MOS</span>
 <span class="label" style="color: #B8C1CB">APR 2021 — NOV 2023</span>
 <span class="company" style="font-family: Fraunces, Georgia, serif; font-weight: 500">Illumination Foundation</span>
@@ -1040,7 +1040,7 @@ button:focus-visible,a:focus-visible{outline:2px solid #C99A45;outline-offset:3p
 <div style="flex: 999 1 420px; min-width: 0; display: flex; flex-direction: column; gap: 14px">
 <h3 class="role" style="margin: 0; font-family: Fraunces, Georgia, serif; font-weight: 500; letter-spacing: -0.01em; color: #E8ECF0">Director of Data</h3>
 <span class="label" style="color: #A3ADB8">DATA SUPPORT SPECIALIST → DATA ENGINEER → SENIOR → PRINCIPAL → DIRECTOR</span>
-<ul class="bullets" style="max-width: 72ch; margin: 4px 0 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 14px; line-height: 1.6; color: #B8C1CB">
+<ul class="bullets" style="max-width: 88ch; margin: 4px 0 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 14px; line-height: 1.6; color: #B8C1CB">
 <li style="display: flex; gap: 16px"><span style="flex: 0 0 10px; height: 1px; margin-top: 13px; background: #6B747D"></span><span><strong style="color: #E8ECF0; font-weight: 600">Built the organization's data function from the ground up,</strong> earning four promotions from Data Support Specialist to Director of Data in about two and a half years.</span></li>
 <li style="display: flex; gap: 16px"><span style="flex: 0 0 10px; height: 1px; margin-top: 13px; background: #6B747D"></span><span><strong style="color: #E8ECF0; font-weight: 600">Modernized pipeline orchestration end to end,</strong> migrating legacy Windows scheduled scripts to Apache Airflow on Docker and establishing the team&#39;s standard for reliable, observable workflows.</span></li>
 <li style="display: flex; gap: 16px"><span style="flex: 0 0 10px; height: 1px; margin-top: 13px; background: #6B747D"></span><span><strong style="color: #E8ECF0; font-weight: 600">Expanded data coverage beyond program data</strong> to include finance and HR, giving leadership a more complete view of the organization.</span></li>
@@ -1050,16 +1050,16 @@ button:focus-visible,a:focus-visible{outline:2px solid #C99A45;outline-offset:3p
 </ul>
 </div>
 </article>
-<article class="job" style="position: relative; display: flex; flex-wrap: wrap; gap: 16px 56px">
+<article class="job" style="position: relative; display: flex; flex-wrap: wrap; gap: 16px 40px">
 <span class="node" aria-hidden="true"></span>
-<div style="flex: 0 1 240px; display: flex; flex-direction: column; gap: 10px">
+<div style="flex: 0 1 200px; display: flex; flex-direction: column; gap: 10px">
 <span style="align-self: flex-start; font-family: 'Geist Mono', ui-monospace, monospace; font-size: 12px; letter-spacing: .12em; padding: 6px 12px; border-radius: 999px; background: rgba(201,154,69,.14); color: #C99A45; border: 1px solid rgba(201,154,69,.45)">1 YR 3 MOS</span>
 <span class="label" style="color: #B8C1CB">JAN 2020 — APR 2021</span>
 <span class="company" style="font-family: Fraunces, Georgia, serif; font-weight: 500">Coding Minds Academy</span>
 </div>
 <div style="flex: 999 1 420px; min-width: 0; display: flex; flex-direction: column; gap: 14px">
 <h3 class="role" style="margin: 0; font-family: Fraunces, Georgia, serif; font-weight: 500; letter-spacing: -0.01em; color: #E8ECF0">Coding Instructor</h3>
-<ul class="bullets" style="max-width: 72ch; margin: 4px 0 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 14px; line-height: 1.6; color: #B8C1CB">
+<ul class="bullets" style="max-width: 88ch; margin: 4px 0 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 14px; line-height: 1.6; color: #B8C1CB">
 <li style="display: flex; gap: 16px"><span style="flex: 0 0 10px; height: 1px; margin-top: 13px; background: #6B747D"></span><span><strong style="color: #E8ECF0; font-weight: 600">Designed curricula and taught Python, algorithms and web development</strong> across multiple classes, adapting complex concepts for beginners.</span></li>
 <li style="display: flex; gap: 16px"><span style="flex: 0 0 10px; height: 1px; margin-top: 13px; background: #6B747D"></span><span><strong style="color: #E8ECF0; font-weight: 600">Mentored students through independent coding projects</strong> and reported progress to parents, building the ability to explain technical work to non-technical audiences.</span></li>
 </ul>
